@@ -1,12 +1,16 @@
 <template>
     <main>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-        <PeopleSayingContainer/>
+      <MasterCarosel/>
+        <AboutCompany/>
+        <WorkingAreasContainer/>
+        <SliderOurProducts/>
+        <SliderTestimoni/>
         <Portofolio :data="data"/>
         <Map/>
     </main>
 </template>
 <script setup>
+
 const data = ref([
   '/img/porto-1.jpg',
   '/img/porto-2.jpg',
