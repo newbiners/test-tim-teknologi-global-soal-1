@@ -10,7 +10,6 @@
     </main>
 </template>
 <script setup>
-
 const data = ref([
   '/img/porto-1.jpg',
   '/img/porto-2.jpg',
