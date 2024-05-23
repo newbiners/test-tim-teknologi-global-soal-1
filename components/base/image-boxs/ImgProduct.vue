@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class="h-36 w-24  md:h-80 relative overflow-hidden bg-secondary container md:w-72" :data-discount="discount">
+        <section class="h-36 w-24 sm:h-56 sm:w-48  md:h-72 relative overflow-hidden bg-secondary container md:w-60" :data-discount="discount">
             <img :src="'/img/porto-1.jpg'" class="w-full cursor-pointer h-full object-cover" />
             <div class="h-11 w-full absolute z-30 overlay bottom-0 flex items-center justify-center gap-3 cursor-pointer text-white">
                 <Icon name="oui:eye" class="text-xl md:text-2xl"/>
@@ -29,8 +29,8 @@ const props = defineProps({
     display: flex;
     align-items: end;
     justify-content: center;
-    transform: rotate(45deg) translate(5%, -90%);
-    font-size: 22px;
+    transform: rotate(45deg) translate(-5%, -80%);
+    font-size: 10px;
     color: white;
     padding-bottom: 5px;
 }
@@ -47,10 +47,10 @@ const props = defineProps({
     bottom: 0;
     opacity: 1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 640px) {
     .container::after {
-        font-size: 10px;
-        transform: rotate(45deg) translate(-7%, -80%);
+        font-size: 14px;
+        transform: rotate(45deg) translate(-0%, -90%);
     }
 }
 </style>

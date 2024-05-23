@@ -8,12 +8,12 @@
             <ButtonBoxTwo :title="'ACCESSORIES'"/>
         </section>
         <section class="flex items-center justify-center gap-2 md:gap-9">
-            <ButtonIcon :position="'left'" :class="'md:relative absolute z-40 bottom-3 left-10 md:left-36'"/>
+            <ButtonIcon :position="'left'" :class="'lg:static absolute z-40 bottom-3 left-20 md:left-36'"/>
             <ImgProduct v-for="i in 3" :key="i" :discount="'15% OFF'"/>
-            <ButtonIcon :position="'right'" :class="'md:relative absolute z-40 bottom-3 right-10 md:right-36'"/>
+            <ButtonIcon :position="'right'" :class="'lg:static absolute z-40 bottom-3 right-20 md:right-36 '"/>
         </section>
         <section class="flex items-center justify-center gap-2 md:gap-9">
-                <TextProduct :class="'w-24  md:w-72'" v-for="i in 3" :key="i"/>
+                <TextProduct :class="'w-24 sm:w-48 md:w-60'" v-for="i in 3" :key="i"/>
         </section>
     </main>
 </template>

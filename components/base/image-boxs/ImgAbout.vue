@@ -5,7 +5,7 @@
         class="h-[62rem] w-[80rem] bg-secondary img-object bottom-0 right-0 object-cover -translate-x-[38rem] md:-translate-x-[30rem] -translate-y-64 md:-translate-y-52"
       />
     </section>
-    <section class="h-80 w-full md:h-[35rem] xl:h-[40rem]  md:w-96 xl:w-[30rem] overflow-hidden translate-y-0 md:translate-y-12">
+    <section class="h-56 sm:h-80 w-full md:h-[35rem] xl:h-[40rem]  md:w-96 xl:w-[30rem] overflow-hidden translate-y-0 md:translate-y-12">
       <div
         class="h-[62rem] w-[80rem] bg-secondary img-background -translate-x-[30rem] -translate-y-[23rem]"
       />
