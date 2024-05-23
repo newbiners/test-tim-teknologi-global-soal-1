@@ -1,10 +1,10 @@
 <template>
-  <button class="w-16 md:w-44 h-7 md:h-14 relative flex items-center justify-center">
+  <button class="w-16 sm:w-20 sm:h-10 md:w-44 h-7 md:h-14 relative flex items-center justify-center">
     <div
-      class="border-2 border-primary rounded-md w-full h-full absolute translate-x-0 md:translate-x-1 translate-y-0"
+      class="border-2 border-primary rounded-md w-full h-full absolute translate-x-0 sm:translate-x-1 sm:translate-y-1 translate-y-0"
     ></div>
     <div
-      class="border-2 border-primary rounded-md w-full h-full absolute -translate-x-0 md:-translate-x-1 -translate-y-0"
+      class="border-2 border-primary rounded-md w-full h-full absolute -translate-x-0 sm:-translate-x-1 sm:-translate-y-1 -translate-y-0"
     ></div>
     <p class="relative z-10 text-primary font-medium text-[7px] md:text-base">{{ title }}</p>
   </button>

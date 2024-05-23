@@ -1,5 +1,5 @@
 <template>
-    <main class="flex flex-col items-center justify-cente py-16 md:py-20 relative bg-tertiary overflow-hidden">
+    <main class="flex flex-col items-center justify-cente py-16 md:py-20 relative bg-tertiary">
         <h3 class="text-2xl md:text-4xl">OUR PRODUCTS</h3>
         <section class="flex items-center mt-3 md:mt-7 gap-1 mb-8 md:mb-11">
             <ButtonBoxTwo :title="'ALL'" :status="true"/>
