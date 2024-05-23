@@ -1,8 +1,8 @@
 <template>
-    <main class="flex w-full items-center justify-center gap-32 mb-28 pt-14">
+    <main class="flex flex-col md:flex-row w-full items-center justify-center gap-10 md:gap-32 mb-28 pt-14 overflow-hidden">
         <TextBoxTestomoni/>
-        <div>
-            <iframe width="500" height="650" src="https://www.youtube.com/embed/JoyKXJdWKOE">
+        <div class="w-72 h-96">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JoyKXJdWKOE">
             </iframe>
         </div>
     </main>

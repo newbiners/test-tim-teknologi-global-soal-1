@@ -1,16 +1,16 @@
 <template>
-  <div class="relative">
-    <div class="mask1 absolute -translate-y-28 -translate-x-52 z-30">
+  <main class="relative">
+    <section class="mask1 absolute -translate-y-28 -translate-x-20 md:-translate-x-52 z-30">
       <div
-        class="h-[62rem] w-[80rem] bg-secondary img-object bottom-0 right-0 object-cover -translate-x-[30rem] -translate-y-52"
+        class="h-[62rem] w-[80rem] bg-secondary img-object bottom-0 right-0 object-cover -translate-x-[38rem] md:-translate-x-[30rem] -translate-y-64 md:-translate-y-52"
       />
-    </div>
-    <div class="h-[40rem] w-[30rem] overflow-hidden translate-y-12">
+    </section>
+    <section class="h-80 w-full md:h-[40rem]  md:w-[30rem] overflow-hidden translate-y-0 md:translate-y-12">
       <div
         class="h-[62rem] w-[80rem] bg-secondary img-background -translate-x-[30rem] -translate-y-[23rem]"
       />
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <style scoped>
@@ -40,4 +40,11 @@
   background-position: left top;
   filter: brightness(70%)
 }
+@media only screen and (max-width: 600px) {
+  .mask1 {
+    -webkit-mask-size: 250px;
+    mask-size: 250px;
+  }
+}
+
 </style>

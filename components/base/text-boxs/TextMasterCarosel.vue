@@ -1,10 +1,11 @@
 <template>
     <main class="flex flex-col items-center justify-center">
-        <div class="relative border-obj">
+        <div class="relative border-obj md:w-auto w-72 ">
             <div class="border-obj1"/>
-            <h1 class=" text-center px-4 py-6 text-7xl font-extrabold">EXPLORE,<br/>DREAM & CREATE</h1>
+            <h1 class=" text-center px-4 py-6 text-2xl md:text-7xl font-extrabold">EXPLORE,<br/>DREAM & CREATE</h1>
         </div>
-        <p id="pop" class="text-center  w-10/12 font-medium -translate-y-3 text-2xl">Our service offer countless possibilities.</p>
+        <p id="pop" class="text-center  w-10/12 font-semibold md:font-medium -translate-y-3 text-lg md:text-2xl">Our service offer countless possibilities.</p>
+        <ButtonBoxTwo :title="'READ MORE'" :status="true"/>
     </main>
 </template>
 <style scoped>
@@ -54,5 +55,19 @@
     background-color: #6DBE45;
     bottom: 0;
     right: 0;
+}
+@media only screen and (max-width: 600px) {
+ .border-obj1::before {
+     height:110px;
+ }
+ .border-obj1::after {
+     height:110px;
+ }
+ .border-obj::before {
+      width: 30px;
+ }
+ .border-obj::after {
+      width: 30px;
+ }
 }
 </style>

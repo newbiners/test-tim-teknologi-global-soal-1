@@ -1,8 +1,8 @@
    <template>
-    <span class="w-96 cursor-pointer h-96 bg-secondary relative flex items-center justify-center transition-all">
+    <span class="w-full md:w-96 cursor-pointer h-36 md:h-96 bg-secondary relative flex items-center justify-center transition-all">
       <img :src="url" alt="portfolio" class="w-full h-full brightness-75 object-cover"/>
-      <p class="text-4xl text-white  absolute z-10 ">VIEW</p>
-      <div class="h-80 w-80 absolute bg-primary overlay"/>
+      <p class="text-2xl md:text-4xl text-white  absolute z-10 ">VIEW</p>
+      <div class="h-32 w-32 md:h-80 md:w-80 absolute bg-primary overlay"/>
     </span>
   </template>
   

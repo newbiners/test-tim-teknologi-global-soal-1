@@ -1,8 +1,8 @@
 <template>
   <header
-    class="bg-secondary w-full flex items-center gap-24 xl:gap-32 justify-center fixed z-50"
+    class="bg-secondary w-screen flex items-center gap-24 xl:gap-32 justify-center fixed z-50"
   >
-    <img src="~/assets/images/logo.png" alt="logo" width="200" />
+    <img src="~/assets/images/logo.png" alt="logo" width="200" class="w-28"/>
     <div
       class="sm:relative absolute w-full top-0  sm:h-auto sm:w-auto pt-14 pb-5 sm:pt-0 sm:pb-0 bg-white sm:bg-secondary sm:shadow-none shadow-2xl"
       :class="[isAct ? 'hidden sm:block': 'block']"
