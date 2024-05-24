@@ -1,8 +1,8 @@
 <template>
-    <main class="flex flex-col items-center justify-center">
+    <span class="flex flex-col items-center justify-center">
         <div class="relative border-obj md:w-auto w-72">
             <div class="border-obj1"></div>
-            <h1 class="text-center px-4 py-6 text-2xl md:text-4xl xl:text-7xl font-extrabold">
+            <h1 class="text-center px-4 py-6 text-2xl md:text-4xl xl:text-7xl font-extrabold alfa-slab-one-regular">
                 EXPLORE,<br/>DREAM & CREATE
             </h1>
         </div>
@@ -10,7 +10,7 @@
             Our service offer countless possibilities.
         </p>
         <ButtonBoxTwo :title="'READ MORE'" :status="true" :solid="true"/>
-    </main>
+    </span>
 </template>
 
 <style scoped>

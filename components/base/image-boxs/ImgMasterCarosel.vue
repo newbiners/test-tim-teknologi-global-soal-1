@@ -1,10 +1,18 @@
 <template>
-    <main class="w-full h-full relative">
-        <img src="/img/porto-1.jpg" class="w-full h-full object-cover"/>
-    </main>
+    <span class="w-full h-full absolute">
+        <img :src="props.url" class="w-full h-full object-cover"/>
+    </span>
 </template>
+<script setup>
+const props = defineProps({
+    url: {
+        type: String,
+        required: true,
+    }
+})
+</script>
 <style scoped>
-main::after {
+span::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -15,7 +23,7 @@ main::after {
     clip-path: polygon(0% 88%,93% 89%,100% 100%,0% 100%);
     transform: translateY(0.1%);
 }
-main::before {
+span::before {
     content: "";
     position: absolute;
     bottom: 0;

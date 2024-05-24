@@ -1,15 +1,36 @@
 <template>
-    <main class="flex flex-col items-center w-full md:w-1/4 mx-4 md:mx-0">
-        <h1 class="text-2xl md:text-4xl font-medium">WHAT PEOPLE SAYING</h1>
-        <SvgQuotetion/>
-        <div class="mb-8">
-            <Icon name="material-symbols:kid-star" class="text-xl md:text-2xl text-primary" v-for="i in 5" :key="i"/>
-        </div>
-        <p class="text-center text-base mx-5 md:mx-0 md:text-xl italic">" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, placeat, nisi consequatur eveniet reiciendis tenetur inventore maxime distinctio molestias corrupti rem labore totam. In voluptates ratione sapiente, officia molestiae cupiditate!. "</p>
-        <div class="flex items-center justify-between w-10/12 mt-9">
-            <ButtonIcon :position="'left'"/>
-            <ProfileTestimoni/>
-           <ButtonIcon :position="'right'"/>
-        </div>
-    </main>
-</template>
+    <span class=" flex flex-col items-center">
+      <p class="text-center text-xl italic">{{ data.text }}</p>
+      <div class="flex items-center justify-between w-10/12 mt-9">
+        <ButtonIcon position="left" @click="btnBack"/>
+        <ProfileTestimoni :name="data.name" :job="data.job" :url="data.url" />
+        <ButtonIcon position="right" @click="btnNext"/>
+      </div>
+    </span>
+  </template>
+  
+  <script setup>
+  const props = defineProps({
+    data: {
+      type: Object,
+      required: true,
+      validator: (value) => {
+        return (
+          typeof value.name === 'string' &&
+          typeof value.url === 'string' &&
+          typeof value.text === 'string' &&
+          typeof value.job === 'string' 
+        );
+      },
+    },
+    btnNext: {
+      type: Function,
+      required: true,
+    },
+    btnBack: {
+      type: Function,
+      required: true,
+    }
+  });
+  </script>
+  

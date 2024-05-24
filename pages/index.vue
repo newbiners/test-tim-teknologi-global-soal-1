@@ -1,10 +1,10 @@
 <template>
     <main>
-      <MasterCarosel/>
+      <MasterCarosel :data="data"/>
         <AboutCompany/>
         <WorkingAreasContainer/>
-        <SliderOurProducts/>
-        <SliderTestimoni/>
+        <SliderOurProducts :data="data"/>
+        <SliderTestimoni :data="dataTestimoni"/>
         <Portofolio :data="data"/>
         <Map/>
     </main>
@@ -18,4 +18,19 @@ const data = ref([
   '/img/porto-5.jpg',
   '/img/porto-6.jpg',
 ]);
+
+const dataTestimoni = ref([
+  {
+    name: 'John Doe',
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat urna ac justo aliquam, quis egestas ligula suscipit. ",
+    job: 'Designer',
+    url: '/img/photo-profile.jpg',
+  },
+  {
+    name: 'Alexandra',
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat urna ac justo aliquam, quis egestas ligula suscipit.",
+    job: 'Programmer',
+    url: '/img/photo-profile2.jpg',
+  },
+])
 </script>

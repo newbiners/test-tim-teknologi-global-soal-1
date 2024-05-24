@@ -1,19 +1,23 @@
 <template>
-    <main>
+    <span>
         <section class="h-36 w-24 sm:h-56 sm:w-48  md:h-72 relative overflow-hidden bg-secondary container md:w-60" :data-discount="discount">
-            <img :src="'/img/porto-1.jpg'" class="w-full cursor-pointer h-full object-cover" />
+            <img :src="url" class="w-full cursor-pointer h-full object-cover" />
             <div class="h-11 w-full absolute z-30 overlay bottom-0 flex items-center justify-center gap-3 cursor-pointer text-white">
                 <Icon name="oui:eye" class="text-xl md:text-2xl"/>
                 <p class="font-medium text-xs md:text-base">QUICK-VIEW</p>
             </div>
         </section>
-    </main>
+    </span>
 </template>
 <script setup>
 const props = defineProps({
     discount: {
         type: String,
         required: true,
+    },
+    url: {
+        type: String,
+        required: true
     }
 })
 </script>

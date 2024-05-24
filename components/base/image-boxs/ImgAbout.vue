@@ -1,5 +1,5 @@
 <template>
-  <main class="relative">
+  <span class="relative">
     <section class="mask1 absolute -translate-y-28 -translate-x-20 md:-translate-x-52 z-30">
       <div
         class="h-[62rem] w-[80rem] bg-secondary img-object bottom-0 right-0 object-cover -translate-x-[38rem] md:-translate-x-[30rem] -translate-y-64 md:-translate-y-52"
@@ -10,7 +10,7 @@
         class="h-[62rem] w-[80rem] bg-secondary img-background -translate-x-[30rem] -translate-y-[23rem]"
       />
     </section>
-  </main>
+  </span>
 </template>
 
 <style scoped>
